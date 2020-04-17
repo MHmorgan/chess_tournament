@@ -1,2 +1,2 @@
 
-from chess_tournament.main import *
+from chess_tournament.main import run

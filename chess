@@ -1,0 +1,14 @@
+#!/usr/bin/env python3.8
+
+import sys
+
+from chess_tournament import run
+
+if __name__ == "__main__":
+    try:
+        run()
+    # Make sure the program exits even if background threads aren't properly stopped
+    except Exception:
+        sys.exit(1)
+    finally:
+        sys.exit(0)
